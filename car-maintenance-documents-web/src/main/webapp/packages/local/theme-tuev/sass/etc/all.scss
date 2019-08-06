@@ -1,0 +1,16 @@
+.x-tab-default-top.x-tab-focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+.x-tab-focus.x-tab-default {
+	box-shadow: none !important;
+	outline: none !important;
+}
+.x-tab-default-top.x-tab-active { 
+	box-shadow: inset 0 -2px 0 0 #41B4B8 !important;
+}
+
+// Themer start: google font
+$themer-google-font-url: 'https://fonts.googleapis.com/css?family=Roboto:400,500,600,700';
+@import url($themer-google-font-url);
+// Themer end: google font

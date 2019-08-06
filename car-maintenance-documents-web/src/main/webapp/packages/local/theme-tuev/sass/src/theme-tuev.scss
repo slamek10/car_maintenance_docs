@@ -1,0 +1,20 @@
+.#{$prefix}grid-item:not(.#{$prefix}grid-item-selected) .grid-row-protected > .#{$prefix}grid-cell {
+	background-color: $button_default_background_color_disabled !important;
+}
+.#{$prefix}form-field[readonly] {
+	background-color: $button_default_background_color_disabled !important;
+}
+/*
+.#{$prefix}tag-field-input-field[readonly] ^ .#{$prefix}form-text-wrap {
+	background-color: $button_default_background_color_disabled !important;
+}
+*/
+
+.delete-focus-bg {
+    &:focus, &:hover{
+        background-color: #DBDBDB !important;
+    }
+    background-image : none !important;
+    background: transparent !important;
+	border-width:0px;
+}

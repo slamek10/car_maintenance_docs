@@ -1,0 +1,115 @@
+$show-header-padding: dynamic(8px);
+$show-header-spacing: dynamic(16px);
+$show-header-picture-size: dynamic(150px);
+$auth-color: white;
+$auth-background-color: #353535;
+
+
+.person-header {
+    overflow: visible;
+    @include background-size(cover);
+    background-color: #353535;
+    background-position: center;
+    position: relative;
+    
+    > .x-body-el {
+        overflow: visible;
+        background-color: rgba(black, 0.25);
+    }
+
+    .btn {
+        background-color: white !important;
+        background-image: none;
+        font-size: 24px;
+        font-weight: bold;
+        border-color: white !important;
+    }
+    .btn:hover {
+        background-color: white !important;
+        background-image: none;
+        border-color: white !important;
+    }
+
+    .header-picture {
+        @include single-box-shadow($hoff: 0, $voff: 4px, $spread: -2px);
+        margin: 0 16px 16px 0;
+        margin-top: 25px;
+        margin-left: 47%;
+        border-radius: 50%;
+        border: 8px solid white;
+        height: 150px;
+        width: 150px;      
+    }
+
+    .header-message {
+        text-align: center;
+        line-height: 1;
+        margin-top: -120px;     
+        margin-left: 44%;
+
+        .name, .desc {
+            display: nowrap;    
+        }
+
+        .name {
+            font-weight: 450;
+            color: rgb(57, 186, 191);
+            font-size: 24px;
+            padding: 16px 16px 16px 16px;
+        }
+
+        .desc {
+            white-space: nowrap;
+            color: rgb(13, 17, 20);
+            font-size: 16px;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        .x-big & {
+            font-size: 22px;
+        }
+    }
+
+    .details-panel {
+       
+        .x-panel-body-default {
+            background-color: #f5f5f5;
+        }
+
+        .x-panel-header-title-default {
+            background-color: #f5f5f5;
+        }
+
+         .user-panel {
+        
+            .title {
+                font-weight: 450;
+                color: rgb(57, 186, 191);
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+
+            .text {
+                color: rgb(13, 17, 20);
+                font-size: 14px;
+                font-weight: 200;
+            }
+
+        }
+
+    }
+   
+
+      .name {
+            font-weight: 450;
+            padding: 16px 16px 16px 16px;
+        }
+
+         .desc {
+            white-space: nowrap;
+            font-weight: 200;
+        }
+
+}
+

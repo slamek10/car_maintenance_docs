@@ -1,0 +1,15 @@
+.object-icon {
+	display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.object-object {
+    background-image: url('../icons/oil-platform.svg');
+}
+.object-equipment {
+    background-image: url('../icons/house-with-tree-leaf.svg');
+}
+.object-anlage {
+    background-image: url('https://image.flaticon.com/icons/svg/417/417782.svg');
+}
