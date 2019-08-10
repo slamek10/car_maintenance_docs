@@ -93,6 +93,7 @@ Ext.define('CarMaintenanceDocuments.view.register.RegisterPage', {
 			 */
 			{
 				xtype : 'checkboxfield',
+				id : 'acceptTerms',
 				name : 'acceptTerms',
 				fieldLabel : 'Terms of Use',
 				hideLabel : true,
@@ -125,13 +126,15 @@ Ext.define('CarMaintenanceDocuments.view.register.RegisterPage', {
 										text : 'Decline',
 										handler : function() {
 											this.up('window').close();
-											formPanel.up('[name=acceptTerms]').setValue(false);
+											Ext.getCmp('acceptTerms').setValue(false);	
+//											formPanel.up('[name=acceptTerms]').setValue(false);
 										}
 									}, {
 										text : 'Accept',
 										handler : function() {
 											this.up('window').close();
-											formPanel.up('[name=acceptTerms]').setValue(true);
+											Ext.getCmp('acceptTerms').setValue(true);											
+//											formPanel.up('[name=acceptTerms]').setValue(true);
 										}
 									} ]
 								});
